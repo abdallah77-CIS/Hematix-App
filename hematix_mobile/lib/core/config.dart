@@ -8,13 +8,10 @@ import 'dart:io';
 ///
 ///  - Android emulator : 10.0.2.2  (the emulator's alias for the host machine)
 ///  - iOS simulator    : localhost (shares the host's network stack)
-///  - Real device      : you MUST set [manualHost] to your computer's LAN IP
-///    (e.g. "192.168.1.14") and have the phone on the same Wi-Fi.
+///  - Real device      : manualHost set to your computer's LAN IP (192.168.100.35)
 class ApiConfig {
-  /// Set this to your machine's LAN IP when testing on a physical device,
-  /// or to your deployed backend host in production. Set to null to fall back
-  /// to the automatic emulator/simulator defaults below.
-  static const String? manualHost = '192.168.1.15';
+  /// Set to your machine's actual LAN IP for physical device testing.
+  static const String? manualHost = '192.168.100.35';
 
   static const int port = 8080;
 
